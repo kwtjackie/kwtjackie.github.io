@@ -1,0 +1,30 @@
+a{color: darkblue;
+  font-size: 40px;
+  transition:all .3s;}
+a:hover{color: #000;
+    background:#ff0;S
+}
+h1 {
+font color=#354185>;
+font-size: 15px;
+}
+
+.img {
+  width: 50%;
+  height: 50vh;
+  background-position: 50%;
+  background-size: cover;
+  display:block; 
+  margin:auto;
+}
+.img:nth-child(1) {
+  background-image: url(https://placeimg.com/640/600/animals);
+}
+
+.img:nth-child(2) {
+  background-image: url(https://placeimg.com/540/680/any);
+}
+
+.img:nth-child(3) {
+  background-image: url(https://placeimg.com/360/240/any);
+}
