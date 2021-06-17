@@ -38,18 +38,6 @@ h1 {
     margin: auto;
 }
 
-.img:nth-child(1) {
-    background-image: url(https://placeimg.com/640/600/animals);
-}
-
-.img:nth-child(2) {
-    background-image: url(https://placeimg.com/540/680/any);
-}
-
-.img:nth-child(3) {
-    background-image: url(https://placeimg.com/360/240/any);
-}
-
 font[Attributes Style] {
     color: rgb(53, 65, 133);
     font-size: large;
@@ -66,10 +54,40 @@ hr {
     width: 99%;
     margin: 15px 12px 15px 12px;
 }
+*{
+	box-sizing:border-box;
+}
+.col2{
+	width: 600px;
+	margin: auto;
+	font-size: 0;
+}
+.col2 img{
+	width: 50%;
+	vertical-align: middle;
+}
+.txt{
+	display: inline-block;
+	width: 50%;
+	font-size: 16px;
+	vertical-align: middle;
+	padding-left: 20px;
+}
+.txt h2{
+	font-size: 42px;
+}
 
 @media only screen and (max-width:576px) {
     hr{
         width: 98%;
     }
+}
+
+@med screen and (max-width:576px)
+    .h_motto{
+        font-size: 30px;
+        margin-top: 60vh;
+        height: 60px!important;
+        writing-mode: vertical-lr;
 }
 
