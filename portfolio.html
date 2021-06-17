@@ -1,108 +1,103 @@
 <!DOCTYPE html>
-<html lang="Tw">
+<html lang="TW">
 
 <head>
- <meta charset="utf-8">
- <title>JACKIE KUNG Portfolio</title>
- <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>JACKIE KUNG Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.theme.default.min.css">
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js"></script>
 </head>
 
 <body>
-<br>
-<br>
-<a href="home.html"><img src="img/LOGO.jpg" style="display:block; margin:auto;"  /> </a>
-<br>
-<br>
-<z-index: 1><position: fixed><div style="text-align:center;"><font color="#354185">
-    <a href="resum.html">  <input type="button" value="RESUM" style="width:120px;height:40px;border:2px blue none;background-color:white;color:#354185;"></a>
-    <a href="portfolio.html"> <input type="button" value="PORTFOLIO" style="width:120px;height:40px;border:2px blue none;background-color:white;color:#354185;"></a>
-    <a href="contact.html"> <input type="button" value="CONTACT" style="width:120px;height:40px;border:2px blue none;background-color:white;color:#354185;"></a>
-    
-   
-    <hr size="8px" align="center" width="100%">
-     </font>
+
+    <div class="nav" style="position: fixed;align-items: center;background-color: white;width: 98.7%;top: 0%;padding-top: 45px;z-index: 1000000;">
+        <a href="home.html"><img src="img/LOGO.jpg" style="display:block; margin:0 auto;"> </a>
+        <div style="text-align:center;">
+            <font color="#354185">
+                <a href="resum.html"> <input type="button" value="RESUM" style="width:120px;height:40px;border:2px blue none;background-color:white;color:#354185;"></a>
+                <a href="portfolio.html"> <input type="button" value="PORTFOLIO" style="width:120px;height:40px;border:2px blue none;background-color:white;color:#354185;"></a>
+                <a href="contact.html"> <input type="button" value="CONTACT" style="width:120px;height:40px;border:2px blue none;background-color:white;color:#354185;"></a>
+                <hr size="8px" align="center" width="100%">
+            </font>
+        </div>
     </div>
-    </position:>
-    </z-index:>
     
     
-<script src='//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
-    <link href="https://unpkg.com/nanogallery2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
-   
-<div id="nanogallery2"></div>
+  <div class="owl-carousel">
+<div class="item">
+<a target="_blank" href="img/01.jpg"><img src="img/01.jpg" /></a>
+</div>
+<div class="item">
+<a target="_blank" href="img/02.jpg"><img src="img/02.jpg" /></a>
+</div>
+<div class="item">
+<a target="_blank" href="img/03.png"><img src="img/03.png" /></a>
+</div>
+<div class="item">
+<a target="_blank" href="img/04.jpg"><img src="img/04.jpg" /></a>
+</div>
+<div class="item">
+<a target="_blank" href="img/05.jpg"><img src="img/05.jpg" /></a>
+</div>
+<div class="item">
+<a target="_blank" href="img/06.png"><img src="img/06.png" /></a>
+</div>
+<div class="item">
+<a target="_blank" href="img/07.jpg"><img src="img/07.jpg" /></a>
+</div>
+
+</div>
 <script>
-$("#nanogallery2").nanogallery2({
-thumbnailWidth: 300, 
-thumbnailHeight: 300, 
-galleryDisplayMode: "moreButton",
-galleryDisplayMoreStep: 3, 
-items: [{
-src: "img/01.jpg",
-srct: "img/01.jpg",
-}, {
-src: "img/02.jpg",
-srct: "img/02.jpg",
-}, {
-src: "img/03.png",
-srct:"img/03.png",
-}, {
-src: "img/04.jpg",
-srct: "img/04.jpg",
-}, {
-src: "img/05.jpg",
-srct: "img/05.jpg",
-}, {
-src: "img/06.png",
-srct: "img/06.png",
-}, {
-src: "img/07.jpg",
-srct: "img/07.jpg",
-}, {
-src: "img/08.jpg",
-srct: "img/08.jpg",
-}, {
-src: "img/09.jpg",
-srct: "img/09.jpg",
-}, {
-src: "img/10.jpg",
-srct: "img/10.jpg",
-}, {
-src: "img/11.jpg",
-srct: "img/11.jpg",
-}, {
-src: "img/12.jpg",
-srct: "img/12.jpg",
-}, {
-src: "img/13.jpg",
-srct: "img/13.jpg",
-},{
-src: "img/14.jpg",
-srct: "img/14.jpg",
-},{
-src: "img/15.jpg",
-srct: "img/15.jpg",
-},{
-src: "img/16.jpg",
-srct: "img/16.jpg",
-},{
-src: "img/17.jpg",
-srct: "img/17.jpg",
-},{
-src: "img/18.jpg",
-srct: "img/18.jpg",
-},{
-src: "img/19.jpg",
-srct: "img/19.jpg",
-},{
-src: "img/20.jpg",
-srct: "img/20.jpg",
-},{
-src: "img/21.jpg",
-srct: "img/21.jpg",
-}
-       ]})
+$(".owl-carousel").owlCarousel({
+items: 4, // 一次輪播幾個項目
+loop: true, // 循環輪播
+margin: 10, // 與右邊圖片的距離
+nav: true, // 導航文字
+autoplay: true, // 自動輪播
+autoplayTimeout: 800, // 切換時間
+autoplayHoverPause: true // 滑鼠經過時暫停
+})
 </script>
-   
-    <script type="text/javascript" src="https://unpkg.com/nanogallery2/dist/jquery.nanogallery2.min.js"></script>
-    </body>
-</html>
+
+ <div class="owl-carousel">
+<div class="item">
+<a target="_blank" href="img/08.jpg"><img src="img/08.jpg" /></a>
+</div>
+<div class="item">
+<a target="_blank" href="img/09.jpg"><img src="img/09.jpg" /></a>
+</div>
+<div class="item">
+<a target="_blank" href="img/15jpg"><img src="img/15.jpg" /></a>
+</div>
+<div class="item">
+<a target="_blank" href="img/11.jpg"><img src="img/11.jpg" /></a>
+</div>
+<div class="item">
+<a target="_blank" href="img/12.jpg"><img src="img/12.jpg" /></a>
+</div>
+<div class="item">
+<a target="_blank" href="img/13.jpg"><img src="img/13.jpg" /></a>
+</div>
+<div class="item">
+<a target="_blank" href="img/14.jpg"><img src="img/14.jpg" /></a>
+</div>
+
+</div>
+<script>
+$(".owl-carousel").owlCarousel({
+items: 4, // 一次輪播幾個項目
+loop: true, // 循環輪播
+margin: 10, // 與右邊圖片的距離
+nav: true, // 導航文字
+autoplay: true, // 自動輪播
+autoplayTimeout: 800, // 切換時間
+autoplayHoverPause: true // 滑鼠經過時暫停
+})
+</script>
+
+
+</body></html>
